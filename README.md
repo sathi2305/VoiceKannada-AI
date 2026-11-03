@@ -1,123 +1,314 @@
-# Voice of Kannada (ಕನ್ನಡದ ಧ್ವನಿ)
-### Advanced AI Voice Assistant, Realistic 3D Human AI Tutor & Kannada Learning Platform
+<div align="center">
 
-[![Node.js](https://img.shields.io/badge/Node.js-22.x-green.svg)](https://nodejs.org/)
-[![React](https://img.shields.io/badge/React-19-blue.svg)](https://react.dev/)
-[![Three.js](https://img.shields.io/badge/Three.js-r174-black.svg)](https://threejs.org/)
-[![Gemini](https://img.shields.io/badge/Gemini-3.8--flash-orange.svg)](https://ai.google.dev/)
-[![Locale](https://img.shields.io/badge/Locale-kn--IN-emerald.svg)](https://en.wikipedia.org/wiki/Kannada)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FACC15,50:F97316,100:E11D48&height=300&section=header&text=VoiceKannada%20AI&fontSize=72&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=AI%20Voice%20Assistant%20%26%20Learning%20Platform%20for%20Kannada&descSize=22&descAlignY=58" width="100%" alt="VoiceKannada AI - AI Voice Assistant and Learning Platform for Kannada"/>
 
----
+<a href="https://voice-kannada.vercel.app/">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=700&size=22&duration=3200&pause=900&color=FACC15&center=true&vCenter=true&width=780&lines=Speak+Kannada.+Be+understood.;Listen%2C+speak%2C+and+practice+with+AI;%E0%B2%95%E0%B2%A8%E0%B3%8D%E0%B2%A8%E0%B2%A1+%E0%B2%A7%E0%B3%8D%E0%B2%B5%E0%B2%A8%E0%B2%BF+%E2%80%A2+Your+voice%2C+your+language" alt="Typing animation" />
+</a>
 
-## 1. Project Overview
+<br/>
 
-**Voice of Kannada** is a cinematic, production-grade AI language platform and conversational tutor designed for the **Kannada Technology Challenge** and hackathon competitions:
-- **Realistic Human 3D AI Tutor**: An interactive 3D virtual teacher rendered with Three.js featuring tailored traditional attire (Nehru jacket/kurta with emerald silk trim), realistic PBR skin and eyes, procedural eyelid blinking, jaw/lip visemes synchronized to speech audio playback, cursor head-tracking, and cultural Namaskara salutation / celebration animations.
-- **Complete 45-Module Learning Studio**: A comprehensive 3-tier master curriculum:
-  - **Level 1 (Beginner - 15 Modules)**: Greetings, Swaragalu vowels, Vyanjanagalu consonants, Numbers 1-20, Family, Everyday Objects, Colors, Days & Time, Food & Fruits, Beku/Beda modal verbs, Pronouns, Location (Elli/Illi/Alli), Shopping & Prices, Haudu/Illa/Alla negations, Daily Routine.
-  - **Level 2 (Intermediate - 15 Modules)**: Core Verbs, Present Continuous, Past Tense, Future Tense, Auto & Metro dialogues, Darshini ordering, Market bargaining, Directions & Addresses, Health/Doctor, Bengaluru Weather, Telephone Kannada, Emotions, Negation (Baralla/Gotthilla), Home Visits, 6 Wh- Questions.
-  - **Level 3 (Advanced - 15 Modules)**: Vibhakti Pratyayagalu (7 Cases), Conjunctions (Mattu/Aadare/Aaddarinda), Conditionals (If... then), Office/Professional Kannada, Idioms/Gaadegalu, Formal vs Informal Register, Karnataka Festivals, Heritage & History, Vachana Sahitya, Social Etiquette, Banking, Emergency Reporting, Karnataka Travel (Hampi-Coorg), Debates & Discourse, Fluent Colloquial Flow.
-  - Every module contains objectives, phrases with word-by-word breakdowns, practical dialogue examples, pronunciation tips, interactive exercises (fill-in & word-order), and knowledge quizzes.
-- **8 AI Assistant Modes**: Free Conversation, Kannada Tutor, Daily Practice, Role-Play Simulator, Translation Assistant, Interview Prep, Travel Companion, Grammar Coach.
-- **Genuine Speech Input & Output**: Native Web Speech API (`kn-IN`) with interim transcripts, multimodal transcription fallback, and synthesized Kannada audio.
-- **Speaking Practice Lab**: Real-time phonetic comparison, reference audio, learner audio recording, and alignment.
-- **Camera-to-Kannada (Vision OCR)**: Multimodal sign/menu translation powered by Gemini Vision.
-- **Culture Engine & Quests**: 10 deep Karnataka cultural guides and gamified Bengaluru city quests.
+[![Live Demo](https://img.shields.io/badge/%F0%9F%8E%99%EF%B8%8F_Live_Demo-voice--kannada.vercel.app-FACC15?style=for-the-badge&labelColor=020617)](https://voice-kannada.vercel.app/)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed_on-Vercel-F97316?style=for-the-badge&logo=vercel&logoColor=white&labelColor=020617)](https://voice-kannada.vercel.app/)
+[![Installable](https://img.shields.io/badge/Mobile-Installable_Web_App-E11D48?style=for-the-badge&labelColor=020617)](https://voice-kannada.vercel.app/)
 
----
+![Speech Recognition](https://img.shields.io/badge/Speech_Recognition-020617?style=flat-square&logo=googleassistant&logoColor=FACC15)
+![Text to Speech](https://img.shields.io/badge/Text_to_Speech-020617?style=flat-square&logo=soundcloud&logoColor=F97316)
+![Speaking Practice](https://img.shields.io/badge/Speaking_Practice-020617?style=flat-square&logo=audacity&logoColor=E11D48)
+![AI Powered](https://img.shields.io/badge/AI_Powered-020617?style=flat-square&logo=openai&logoColor=white)
 
-## 2. Realistic 3D Human AI Tutor
+<br/>
 
-The 3D AI Tutor is rendered inside `src/components/RealisticHumanTutor3D.tsx` utilizing Three.js and PBR materials:
-1. **Procedural Rigged Anatomy**:
-   - Cranium, jawline, ears, nose, and sculpted hair.
-   - Tailored midnight navy Nehru jacket with emerald silk piping and brass buttons.
-   - Detailed eye assembly with sclera, radiating brown/hazel iris texture, and procedural eyelids.
-2. **Animation Engine**:
-   - **Idle Breathing**: Natural expansion and contraction of chest and shoulders.
-   - **Organic Blinking**: Eyelids close and open naturally every 2.5–5 seconds (~160ms burst).
-   - **Pointer Tracking**: Smooth exponential damping head tracking of user mouse movement.
-   - **Lip-Sync Visemes**: Articulated jaw movement synchronized to audio playback state.
-   - **Interactive States**:
-     - `listening`: Attentive forward lean, illuminated emerald aura.
-     - `thinking`: Thoughtful upward gaze, royal violet aura.
-     - `speaking`: Expressive head nods with real-time lip movement.
-     - `success`: Traditional Namaskara salutation gesture with palms joined at chest, golden celebration aura.
-     - `error`: Sympathetic head tilt with soft red accent.
-3. **Custom Model Extensibility**:
-   - Supports external rigged GLB models. Simply place an `avatar.glb` file into the `/public` folder and `GLTFLoader` will mount it seamlessly while preserving animation state logic.
+**[Live Demo](https://voice-kannada.vercel.app/)** &nbsp;|&nbsp; **[Overview](#-overview)** &nbsp;|&nbsp; **[Features](#-features)** &nbsp;|&nbsp; **[Architecture](#-architecture)** &nbsp;|&nbsp; **[Quick Start](#-quick-start)** &nbsp;|&nbsp; **[Roadmap](#-roadmap)**
+
+</div>
+
+<br/>
 
 ---
 
-## 3. Technology Stack
+<div align="center">
 
-- **Frontend**: React 19, TypeScript, Vite 8, Tailwind CSS v4, Three.js (r174), Lucide React.
-- **Backend**: Node.js, Express, TSX.
-- **AI & Speech**:
-  - `@google/genai` TypeScript SDK:
-    - Text Conversation: `gemini-3.8-flash`
-    - Text-to-Speech: `gemini-3.8-flash-lite-tts`
-    - Vision Analysis: `gemini-3.8-flash`
-    - Audio Transcription: `gemini-3.8-flash`
-  - Browser Speech APIs: Web Speech API (`kn-IN` locale) & SpeechSynthesis.
-- **Persistence**: Atomic local storage file engine (`data/storage.json`).
+## 🎯 Overview
+
+**ಕನ್ನಡ ಧ್ವನಿ: a voice-first way to use and learn Kannada.**
+
+VoiceKannada AI is a web-based voice assistant and immersive language learning platform. Speak in Kannada, get it recognized, hear natural replies, and practice speaking with instant AI feedback, all from your browser or phone.
+
+<br/>
+
+| 😕 The problem | ✅ VoiceKannada AI |
+|:---|:---|
+| Most voice tools are built for English first | Built around Kannada from the start |
+| Typing Kannada is slow and awkward on many devices | Just speak, and the app listens |
+| Learners get no feedback on how they sound | Speaking practice with AI guidance |
+| Learning apps feel like flashcards | Immersive, conversation-style practice |
+| Apps need installs and setup | Open the link and start, or add it to your home screen |
+
+</div>
+
+<br/>
 
 ---
 
-## 4. Quickstart & Windows Development Guide
+<div align="center">
 
-### Environment Setup
-Create a `.env` file in the project root:
-```ini
-GEMINI_API_KEY="your-gemini-api-key"
-PORT=3000
+## ✨ Features
+
+</div>
+
+<table align="center">
+<tr>
+<td width="50%" valign="top">
+
+### 🎙️ Voice Assistant
+- Speech recognition for spoken Kannada
+- Natural text-to-speech replies you can hear
+- Hands-free, conversation-style interaction
+- Clean, dark, distraction-free interface
+
+</td>
+<td width="50%" valign="top">
+
+### 📚 Language Learning
+- Immersive learning experience
+- Speaking practice with AI feedback
+- Listen, repeat, and improve loop
+- Built for learners and native speakers alike
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 📱 Works Everywhere
+- Responsive on phone, tablet, and desktop
+- Installable as a web app on mobile
+- No sign-up wall, open and use
+
+</td>
+<td width="50%" valign="top">
+
+### ⚡ Fast and Modern
+- Deployed on Vercel's global edge network
+- Smooth, animated interface
+- Optimized for quick voice round trips
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+---
+
+<div align="center">
+
+## 🔄 How It Works
+
+</div>
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor U as User
+    participant UI as Web App
+    participant ASR as Speech Recognition
+    participant AI as AI Language Layer
+    participant TTS as Text to Speech
+
+    U->>UI: Taps mic and speaks in Kannada
+    UI->>ASR: Audio stream
+    ASR-->>UI: Kannada text
+    UI->>AI: Text + mode (assistant or practice)
+    AI-->>UI: Reply, correction, or feedback
+    UI->>TTS: Reply text
+    TTS-->>UI: Natural speech audio
+    UI-->>U: Shows text and plays voice
 ```
 
-### Installation & Launch (PowerShell / Bash)
-```powershell
-# 1. Install dependencies
+<br/>
+
+---
+
+<div align="center">
+
+## 🏗️ Architecture
+
+</div>
+
+```mermaid
+flowchart TB
+    U(["👤 User<br/>phone or desktop"])
+
+    subgraph FE["Presentation layer  |  Vercel"]
+        UI["Web app<br/>installable, responsive"]
+        MIC["Mic capture<br/>and audio playback"]
+        VIEW["Assistant view<br/>and practice view"]
+    end
+
+    subgraph VOICE["Voice layer"]
+        ASR["Speech recognition<br/>Kannada audio to text"]
+        TTS["Text to speech<br/>text to Kannada audio"]
+    end
+
+    subgraph BRAIN["Intelligence layer"]
+        NLU["Language understanding"]
+        ASSIST["Assistant replies"]
+        COACH["Speaking coach<br/>feedback and guidance"]
+    end
+
+    U <--> UI
+    UI --- MIC
+    UI --- VIEW
+    MIC -->|audio| ASR
+    ASR -->|text| NLU
+    NLU --> ASSIST
+    NLU --> COACH
+    ASSIST -->|reply text| TTS
+    COACH -->|feedback text| TTS
+    TTS -->|audio| MIC
+
+    style U fill:#FACC15,stroke:#F97316,color:#020617
+    style UI fill:#0f172a,stroke:#FACC15,color:#fff
+    style MIC fill:#0f172a,stroke:#FACC15,color:#fff
+    style VIEW fill:#0f172a,stroke:#FACC15,color:#fff
+    style ASR fill:#7c2d12,stroke:#F97316,color:#fff
+    style TTS fill:#7c2d12,stroke:#F97316,color:#fff
+    style NLU fill:#881337,stroke:#E11D48,color:#fff
+    style ASSIST fill:#881337,stroke:#E11D48,color:#fff
+    style COACH fill:#881337,stroke:#E11D48,color:#fff
+```
+
+<br/>
+
+<div align="center">
+
+| Layer | Responsibility |
+|:---|:---|
+| **Presentation** | Responsive, installable web app that handles the mic, playback, and both assistant and practice views |
+| **Voice** | Converts spoken Kannada to text and reply text back into natural speech |
+| **Intelligence** | Understands the request, produces replies, and coaches speaking practice |
+| **Hosting** | Vercel deployment with automatic builds from GitHub |
+
+</div>
+
+<br/>
+
+### 🎓 Learning loop
+
+```mermaid
+flowchart LR
+    A["🎧 Listen<br/>hear the phrase"] --> B["🎙️ Speak<br/>repeat in Kannada"]
+    B --> C["🧠 Analyze<br/>AI checks your speech"]
+    C --> D["💬 Feedback<br/>tips and corrections"]
+    D --> E["🔁 Practice again<br/>improve each round"]
+    E --> A
+
+    style A fill:#0f172a,stroke:#FACC15,color:#fff
+    style B fill:#7c2d12,stroke:#F97316,color:#fff
+    style C fill:#881337,stroke:#E11D48,color:#fff
+    style D fill:#7c2d12,stroke:#F97316,color:#fff
+    style E fill:#0f172a,stroke:#FACC15,color:#fff
+```
+
+<br/>
+
+---
+
+<div align="center">
+
+## 🧰 Tech Stack
+
+<img src="https://skillicons.dev/icons?i=html,css,js,nodejs,vercel,github,git&theme=dark" alt="Tech stack icons"/>
+
+</div>
+
+<br/>
+
+| | |
+|:---|:---|
+| **Frontend** | Responsive, installable web app |
+| **Voice** | Speech recognition and text-to-speech for Kannada |
+| **AI** | Language understanding and speaking feedback |
+| **Hosting** | Vercel, deployed from GitHub |
+
+<br/>
+
+---
+
+## 🚀 Quick Start
+
+### Use it online
+
+Open **[voice-kannada.vercel.app](https://voice-kannada.vercel.app/)**, allow microphone access, and start speaking. On a phone, use your browser's **Add to Home Screen** to install it like an app.
+
+### Run it locally
+
+```bash
+git clone https://github.com/sathi2305/VoiceKannada-AI.git
+cd VoiceKannada-AI
 npm install
-
-# 2. Run typecheck & lint
-npm run lint
-
-# 3. Start full-stack development server
 npm run dev
 ```
 
-The application will start on **http://localhost:3000**.
+Then open the local address shown in your terminal.
 
-### Production Build
-```powershell
-# Build client production bundle
-npm run build
+> **Tip:** microphone access works on `localhost` and on HTTPS sites. Use a recent Chrome or Edge for the best speech support.
 
-# Start production server
-npm run start
-```
+<br/>
 
 ---
 
-## 5. API Endpoints
+## ☁️ Deployment
 
-- `GET /health` — Service readiness & Gemini configuration check.
-- `GET /api/config/public` — Safe public features, models, and locale config.
-- `POST /api/chat` — Conversational AI with Kannada script, transliteration, and grammar notes.
-- `POST /api/chat/summarize` — Conversation summary.
-- `POST /api/speech/transcribe` — Multimodal audio transcription.
-- `POST /api/speech/synthesize` — Cloud Kannada speech synthesis.
-- `GET /api/lessons` — 45-module curriculum overview with objectives and metadata.
-- `GET /api/lessons/:id` — Full lesson payload including dialogues, interactive exercises, and quizzes.
-- `GET /api/progress` & `POST /api/progress/lesson` — Lesson progress & XP tracking.
-- `GET /api/exercises/*` — Sentence builder, listening comprehension, and script character data.
-- `GET /api/culture/articles` — Cultural articles and etiquette guides.
-- `POST /api/vision/analyze` — Camera signboard translation.
-- `POST /api/translate` — Two-way bidirectional translator.
+| | |
+|:---|:---|
+| **Live site** | [voice-kannada.vercel.app](https://voice-kannada.vercel.app/) |
+| **Host** | Vercel |
+| **Flow** | Push to GitHub, Vercel builds and publishes automatically |
+
+<br/>
 
 ---
 
-## 6. Privacy & Security
+## 🗓️ Roadmap
 
-- Microphone access is requested only during active voice interaction.
-- Audio streams are processed in memory and never permanently stored.
-- User data, XP, and lesson progress are stored locally and can be cleared at any time via Settings.
+- [x] Kannada speech recognition
+- [x] Natural text-to-speech replies
+- [x] Speaking practice mode
+- [x] Mobile-friendly, installable experience
+- [ ] Progress tracking and streaks
+- [ ] More regional accents and dialects
+- [ ] Offline practice mode
+- [ ] More Indian languages
+
+<br/>
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+2. Create a branch: `git checkout -b feature/your-feature`
+3. Commit your changes: `git commit -m "Add your feature"`
+4. Push the branch: `git push origin feature/your-feature`
+5. Open a pull request
+
+<br/>
+
+---
+
+<div align="center">
+
+### Built by [Sathiyamoorthi S](https://github.com/sathi2305)
+
+If VoiceKannada AI helped you, consider giving it a ⭐
+
+[![Try it live](https://img.shields.io/badge/Try_it_live-FACC15?style=for-the-badge&logo=vercel&logoColor=020617&labelColor=020617)](https://voice-kannada.vercel.app/)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FACC15,50:F97316,100:E11D48&height=120&section=footer" width="100%" alt="footer wave"/>
+
+</div>
