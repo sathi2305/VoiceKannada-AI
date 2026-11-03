@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voice of Kannada - AI Voice Assistant & Learning Platform</title>
+    <meta name="description" content="Advanced AI-powered Kannada voice assistant and immersive language learning platform with speech recognition, text-to-speech, and speaking practice." />
+    <meta property="og:title" content="Voice of Kannada - AI Voice Assistant & Learning Platform" />
+    <meta property="og:description" content="Advanced AI-powered Kannada voice assistant and immersive language learning platform with speech recognition, text-to-speech, and speaking practice." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#020617" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="KannadaVoice" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Kannada:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // Suppress benign Vite WebSocket HMR disconnection notices in cloud dev iframe environments
+      (function() {
+        function isViteHmrError(err) {
+          if (!err) return false;
+          var str = typeof err === 'string' ? err : (err.message || err.reason || err.stack || String(err));
+          return (
+            str.indexOf('WebSocket') !== -1 ||
+            str.indexOf('@vite/client') !== -1 ||
+            str.indexOf('closed without opened') !== -1 ||
+            str.indexOf('[vite]') !== -1
+          );
+        }
+
+        var origConsoleError = console.error;
+        console.error = function() {
+          for (var i = 0; i < arguments.length; i++) {
+            if (isViteHmrError(arguments[i])) {
+              return;
+            }
+          }
+          return origConsoleError.apply(console, arguments);
+        };
+
+        window.addEventListener('error', function(event) {
+          if (
+            isViteHmrError(event.message) ||
+            isViteHmrError(event.error) ||
+            isViteHmrError(event.filename)
+          ) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            return true;
+          }
+        }, true);
+
+        window.addEventListener('unhandledrejection', function(event) {
+          if (isViteHmrError(event.reason)) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            return true;
+          }
+        }, true);
+
+        var prevOnError = window.onerror;
+        window.onerror = function(msg, url, line, col, error) {
+          if (isViteHmrError(msg) || isViteHmrError(url) || isViteHmrError(error)) {
+            return true;
+          }
+          if (typeof prevOnError === 'function') {
+            return prevOnError.apply(this, arguments);
+          }
+        };
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-emerald-500/30 selection:text-emerald-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

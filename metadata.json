@@ -1,0 +1,6 @@
+{
+  "name": "Voice of Kannada - AI Voice Assistant & Learning Platform",
+  "description": "Advanced AI-powered Kannada voice assistant and immersive language learning platform with speech recognition, text-to-speech, and speaking practice.",
+  "requestFramePermissions": ["microphone", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
