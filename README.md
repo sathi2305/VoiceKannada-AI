@@ -1,608 +1,399 @@
 <div align="center">
 
-<img src="images/hero.png" alt="CampusPulse - AI-Powered Campus Issue Intelligence Platform" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF512F,100:F09819&height=220&section=header&text=VoiceKannada%20AI&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Speak%20Kannada.%20Get%20Answers.%20Hear%20Them%20Back.&descAlignY=60&descSize=20" alt="VoiceKannada AI banner" width="100%"/>
 
-<br/>
+# 🎙️ VoiceKannada-AI
 
-<a href="https://campus-pluse-ai-phi.vercel.app/">
-  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=700&size=22&duration=3000&pause=900&color=22D3EE&center=true&vCenter=true&width=760&lines=What+should+we+fix+first%3F;Understand+%E2%80%A2+Prioritize+%E2%80%A2+Resolve;Turn+campus+problems+into+campus+intelligence" alt="Typing animation" />
-</a>
+### ಕನ್ನಡದಲ್ಲಿ ಮಾತನಾಡಿ — AI ಉತ್ತರಿಸುತ್ತದೆ
+**A Kannada-first voice assistant that listens, understands, and speaks back.**
 
-<br/>
+<p>
+  <a href="https://voice-kannada.vercel.app/"><img src="https://img.shields.io/badge/🚀%20Live%20Demo-Open%20App-success?style=for-the-badge" alt="Live Demo"/></a>
+  <a href="https://github.com/sathi2305/VoiceKannada-AI"><img src="https://img.shields.io/badge/GitHub-VoiceKannada--AI-181717?style=for-the-badge&logo=github" alt="GitHub Repo"/></a>
+</p>
 
-[![Live Demo](https://img.shields.io/badge/%F0%9F%9A%80_Live_Demo-campus--pluse--ai--phi.vercel.app-22d3ee?style=for-the-badge&labelColor=0b1224)](https://campus-pluse-ai-phi.vercel.app/)
-[![Backend API](https://img.shields.io/badge/%E2%9A%99%EF%B8%8F_Backend_API-Vercel-8b5cf6?style=for-the-badge&labelColor=0b1224)](https://campus-pluse-ai-backend.vercel.app)
-[![License](https://img.shields.io/badge/License-MIT-10b981?style=for-the-badge&labelColor=0b1224)](#-license)
+<p>
+  <img src="https://img.shields.io/badge/Deployed%20on-Vercel-000000?style=flat-square&logo=vercel" alt="Vercel"/>
+  <img src="https://img.shields.io/badge/Language-Kannada%20(ಕನ್ನಡ)-orange?style=flat-square" alt="Kannada"/>
+  <img src="https://img.shields.io/badge/AI-Voice%20Assistant-blueviolet?style=flat-square" alt="AI Voice Assistant"/>
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square" alt="PRs welcome"/>
+  <img src="https://img.shields.io/github/stars/sathi2305/VoiceKannada-AI?style=flat-square" alt="Stars"/>
+  <img src="https://img.shields.io/github/forks/sathi2305/VoiceKannada-AI?style=flat-square" alt="Forks"/>
+  <img src="https://img.shields.io/github/last-commit/sathi2305/VoiceKannada-AI?style=flat-square" alt="Last commit"/>
+</p>
 
-![React](https://img.shields.io/badge/React_18-0b1224?style=flat-square&logo=react&logoColor=61dafb)
-![Vite](https://img.shields.io/badge/Vite-0b1224?style=flat-square&logo=vite&logoColor=a78bfa)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-0b1224?style=flat-square&logo=tailwindcss&logoColor=38bdf8)
-![Node.js](https://img.shields.io/badge/Node.js-0b1224?style=flat-square&logo=nodedotjs&logoColor=6cc24a)
-![Express](https://img.shields.io/badge/Express-0b1224?style=flat-square&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-0b1224?style=flat-square&logo=mongodb&logoColor=47a248)
-![Socket.IO](https://img.shields.io/badge/Socket.IO-0b1224?style=flat-square&logo=socketdotio&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI_optional-0b1224?style=flat-square&logo=openai&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-0b1224?style=flat-square&logo=docker&logoColor=2496ed)
-
-<br/>
-
-**[Live Demo](https://campus-pluse-ai-phi.vercel.app/)** &nbsp;|&nbsp; **[Overview](#-overview)** &nbsp;|&nbsp; **[AI Pipeline](#-ai-pipeline)** &nbsp;|&nbsp; **[Architecture](#-architecture)** &nbsp;|&nbsp; **[Quick Start](#-quick-start)** &nbsp;|&nbsp; **[API](#-realtime-events)** &nbsp;|&nbsp; **[Roadmap](#-roadmap)**
+**[🌐 Live Demo](https://voice-kannada.vercel.app/)** •
+**[✨ Features](#-features)** •
+**[🏗️ Architecture](#️-architecture)** •
+**[⚙️ Installation](#️-installation)** •
+**[🚀 Deployment](#-deployment)** •
+**[🤝 Contributing](#-contributing)**
 
 </div>
-
-<br/>
 
 ---
 
-<div align="center">
+## 📖 Table of Contents
 
-## 🎯 Overview
-
-**Not another complaint portal.**
-
-CampusPulse turns scattered student feedback into prioritized, explainable, actionable insight, so institutions find problems faster, respond smarter, and build better campuses.
-
-It answers one question:
-
-### *What campus problem should be solved first, why does it matter, and what action should be taken?*
-
-<br/>
-
-| 😵 Before CampusPulse | ⚡ With CampusPulse |
-|:---|:---|
-| Issues arrive over WhatsApp, email, and paper notes | One central, multi-tenant platform |
-| 40 students report the same water outage separately | Duplicates detected and merged into one cluster |
-| Critical issues are buried under low-priority requests | Explainable priority score from 0 to 100 |
-| No SLA, no ownership, no accountability | SLA timers, auto-routing, live breach alerts |
-| Recurring problems are never noticed | Recurrence detection and predictive alerts |
-| Admins guess where to look | Live campus heatmap and AI recommendations |
-
-</div>
-
-<br/>
+- [About the Project](#-about-the-project)
+- [Live Demo](#-live-demo)
+- [Screenshots](#-screenshots)
+- [Features](#-features)
+- [Architecture](#️-architecture)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Installation](#️-installation)
+- [Environment Variables](#-environment-variables)
+- [Usage](#-usage)
+- [Deployment](#-deployment)
+- [Roadmap](#️-roadmap)
+- [Troubleshooting](#-troubleshooting)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Contact](#-contact)
 
 ---
 
-<div align="center">
+## 🌟 About the Project
 
-## 🧠 AI Pipeline
+**VoiceKannada-AI** brings conversational AI to the Kannada language. Most voice assistants treat Indian languages as an afterthought. This project puts **Kannada first**, so anyone can talk to an AI in their own language, without typing and without needing English.
 
-Every report passes through eight stages in seconds, with no manual triage.
+**The idea in one line:** you speak in Kannada, the app converts your speech to text, an AI model understands and answers, and the answer is spoken back to you in Kannada.
 
-<img src="images/ai-pipeline.png" alt="CampusPulse AI pipeline: understand, classify, analyze, deduplicate, cluster, recurrence, prioritize, route and SLA" width="100%"/>
+### 🎯 Why this project?
 
-</div>
-
-<br/>
-
-<div align="center">
-
-| Stage | What happens | Example |
-|:---:|:---|:---|
-| **Understand** | NLP reads the free-text complaint (OpenAI or local fallback) | *"Hostel Block B has no water since 6 AM"* |
-| **Classify** | Maps the issue to Water, Electricity, Wi-Fi, Hostel, Transport, Food, and more | Water + Hostel |
-| **Analyze** | Estimates severity, sentiment, and affected users | Severity 8, negative, about 200 students |
-| **Deduplicate** | TF-IDF cosine similarity plus location, category, and time match | above 0.85 likely duplicate, 0.65 to 0.85 related |
-| **Cluster** | Groups related reports into one problem | *Hostel B Water Crisis: 47 reports, 630 affected* |
-| **Recurrence** | Looks for repeat patterns across weeks | Wi-Fi: Jan 4, Feb 8, Mar 13, Apr 21 flagged |
-| **Prioritize** | Computes a transparent score with reasons | **94 / 100** |
-| **Route + SLA** | Assigns the right department and starts the clock | Hostel Maintenance, 2h resolution |
-
-</div>
-
-<br/>
+| Problem | How VoiceKannada-AI helps |
+|---|---|
+| Most AI tools are English-centric | Kannada-first voice experience |
+| Typing in Kannada is slow for many users | Speak naturally instead |
+| Low-literacy and elderly users struggle with text UIs | Voice-in, voice-out interaction |
+| Hard to access AI in regional languages | Free, browser-based, no install needed |
 
 ---
 
+## 🚀 Live Demo
+
 <div align="center">
+
+### 👉 **[https://voice-kannada.vercel.app/](https://voice-kannada.vercel.app/)** 👈
+
+*Open in Chrome or Edge on desktop or mobile, and allow microphone access when asked.*
+
+</div>
+
+---
+
+## 📸 Screenshots
+
+> 💡 **Add your own images:** save screenshots in `docs/screenshots/` using the file names below and they will appear here automatically.
+
+<div align="center">
+
+| Home Screen | Voice Listening |
+|:---:|:---:|
+| <img src="docs/screenshots/home.png" alt="Home screen" width="400"/> | <img src="docs/screenshots/listening.png" alt="Listening state" width="400"/> |
+| **Landing page with mic button** | **Live Kannada speech capture** |
+
+| AI Response | Mobile View |
+|:---:|:---:|
+| <img src="docs/screenshots/response.png" alt="AI response" width="400"/> | <img src="docs/screenshots/mobile.png" alt="Mobile view" width="200"/> |
+| **Text + spoken Kannada answer** | **Fully responsive layout** |
+
+</div>
+
+### 🎬 Demo GIF
+
+<div align="center">
+  <img src="docs/screenshots/demo.gif" alt="VoiceKannada-AI demo" width="700"/>
+</div>
+
+---
 
 ## ✨ Features
 
-</div>
-
-<table align="center">
-<tr>
-<td width="50%" valign="top">
-
-### 🧩 Intelligence
-- AI complaint understanding with **Local** and **Enhanced** modes
-- Duplicate detection and issue clustering
-- Recurrence detection across weeks
-- Explainable priority scoring with reasons
-- Predictive alerts, for example *"Wi-Fi congestion expected Monday 9 to 11 AM"*
-- AI recommendations panel with evidence and next action
-- Campus Health Score from 0 to 100
-
-</td>
-<td width="50%" valign="top">
-
-### 🛠️ Operations
-- Priority Queue: **"What should we fix first?"**
-- SLA tracking with warning and breach states
-- Auto-assignment to the right department
-- Status workflow with a visual timeline
-- Voting, following, and resolution confirmation
-- Anonymous reporting with privacy controls
-- Full audit log of every admin action
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🗺️ Visibility
-- Interactive campus heatmap (React Leaflet)
-- Analytics: volume, category, department, resolution time, SLA performance, sentiment
-- Trend detection, for example *Internet +43% this week*
-- 8-step issue wizard with live AI preview
-- Evidence uploads (JPG, PNG, WEBP, PDF)
-
-</td>
-<td width="50%" valign="top">
-
-### 🏢 Platform
-- Multi-tenant: Organization, Campus, Department, Users, Issues
-- Roles: Student, Faculty, Department Admin, Campus Admin, Super Admin
-- Realtime updates through Socket.IO
-- JWT auth, RBAC, tenant isolation on every document
-- Docker Compose for a one-command local stack
-
-</td>
-</tr>
-</table>
-
-<br/>
+- 🎤 **Kannada speech recognition**: speak naturally and see your words transcribed.
+- 🧠 **AI-powered responses**: a language model understands your question and replies.
+- 🔊 **Spoken replies**: answers are read aloud in Kannada through text-to-speech.
+- 💬 **Conversation view**: see the transcript of what you said and what the AI answered.
+- 📱 **Responsive design**: works on phones, tablets, and desktops.
+- ⚡ **Fast and lightweight**: served from Vercel's global edge network.
+- 🌐 **No installation for users**: runs fully in the browser.
+- 🔓 **Open source**: free to read, fork, and improve.
 
 ---
-
-<div align="center">
-
-## 🗺️ Campus Heatmap
-
-Each column is a campus zone. Height and color show issue intensity, and the pulsing rings mark live hotspots.
-
-<img src="images/heatmap-3d.png" alt="Isometric 3D campus heatmap with animated hotspots" width="85%"/>
-
-</div>
-
-<br/>
-
----
-
-<div align="center">
 
 ## 🏗️ Architecture
 
-<img src="images/architecture.png" alt="CampusPulse architecture: React client, Express API, service layer, MongoDB, Socket.IO realtime channel" width="100%"/>
-
-</div>
-
-<br/>
-
-### System flow
-
 ```mermaid
 flowchart LR
-    subgraph Client["Client (Vercel)"]
-        UI["React 18 + Vite<br/>Tailwind, Framer Motion"]
-        MAP["React Leaflet<br/>Heatmap"]
-        CH["Recharts<br/>Analytics"]
-    end
+    A[👤 User speaks Kannada] --> B[🎤 Speech-to-Text]
+    B --> C[📝 Kannada Text]
+    C --> D[🧠 AI Language Model]
+    D --> E[💬 Kannada Response Text]
+    E --> F[🔊 Text-to-Speech]
+    F --> G[👂 User hears the answer]
 
-    subgraph API["Express API"]
-        MW["Helmet, CORS, rate limit<br/>JWT, RBAC, Zod"]
-        CTRL["Controllers"]
-    end
-
-    subgraph SVC["Service layer"]
-        AI["AI service<br/>OpenAI + local fallback"]
-        PRI["Priority engine"]
-        DUP["Duplicate + cluster"]
-        SLA["SLA engine"]
-        ANA["Analytics"]
-    end
-
-    DB[("MongoDB<br/>Mongoose")]
-    IO{{"Socket.IO"}}
-    OAI["OpenAI API"]
-    CLD["Cloudinary"]
-
-    UI --> MW --> CTRL --> SVC
-    MAP --> MW
-    CH --> MW
-    AI -.optional.-> OAI
-    CTRL -.uploads.-> CLD
-    SVC --> DB
-    CTRL --> IO
-    SLA --> IO
-    IO ==>|realtime events| UI
+    style A fill:#FF512F,color:#fff
+    style D fill:#7F00FF,color:#fff
+    style G fill:#11998e,color:#fff
 ```
 
 ### Request lifecycle
 
 ```mermaid
 sequenceDiagram
-    autonumber
-    actor S as Student
-    participant FE as React App
-    participant API as Express API
-    participant AI as AI Service
-    participant DB as MongoDB
-    participant IO as Socket.IO
-    actor A as Dept Admin
+    participant U as User
+    participant W as Web App (Vercel)
+    participant S as Speech Recognition
+    participant L as AI Model
+    participant T as Text-to-Speech
 
-    S->>FE: "Hostel Block B has no water since 6 AM"
-    FE->>API: POST /api/issues
-    API->>AI: analyze(text)
-    AI-->>API: category, severity, sentiment, affected
-    API->>DB: find similar issues
-    DB-->>API: related reports
-    API->>API: cluster, recurrence, priority 94, SLA 2h
-    API->>DB: save issue + audit log
-    API->>IO: issue.created
-    IO-->>A: live notification
-    A->>API: status IN_PROGRESS
-    API->>IO: issue.statusChanged
-    IO-->>S: timeline updates in realtime
-    A->>API: upload resolution evidence
-    S->>API: confirm resolved
-    API->>DB: CLOSED + analytics refresh
+    U->>W: Tap mic and speak in Kannada
+    W->>S: Send audio
+    S-->>W: Kannada transcript
+    W->>L: Transcript as prompt
+    L-->>W: Kannada reply
+    W->>T: Reply text
+    T-->>W: Audio
+    W-->>U: Display text and play voice
 ```
 
-### Layer responsibilities
-
-| Layer | Responsibility | Key tech |
-|:---|:---|:---|
-| **Presentation** | Wizard, dashboards, priority queue, heatmap, analytics | React 18, Vite, Tailwind, Framer Motion, Recharts, React Leaflet |
-| **API** | Routing, validation, auth, RBAC, rate limiting, error handling | Express, JWT, Zod, Helmet, express-rate-limit |
-| **Service** | Business logic kept separate from controllers | `services/ai`, `priority`, `duplicate`, `analytics`, `sla` |
-| **AI** | Independent layer with a deterministic keyword fallback, so the app works without an API key | OpenAI (optional), TF-IDF cosine |
-| **Data** | Tenant-scoped documents and audit trail | MongoDB, Mongoose |
-| **Realtime** | Push events to students and admins | Socket.IO |
-| **Storage** | Evidence uploads | Cloudinary, or local `/uploads` for demos |
-
-<br/>
-
 ---
-
-<div align="center">
-
-## 📊 Explainable Priority Engine
-
-No black box. Every score comes with the reasons behind it.
-
-</div>
-
-```text
-Priority = Severity x 30 + Affected x 25 + Recurrence x 20 + Urgency x 15 + Sentiment x 10
-           (each factor normalized, final score scaled to 0 - 100)
-```
-
-<div align="center">
-
-| Rank | Issue | Priority | Affected | Recurrence | SLA left |
-|:---:|:---|:---:|:---:|:---:|:---:|
-| 🔴 1 | Water outage, Hostel B | **96** | 430 | High | 1h 42m |
-| 🟠 2 | Wi-Fi congestion, Library | **81** | 310 | Medium | 3h 10m |
-| 🟡 3 | Power fluctuation, Block C | **67** | 120 | Low | 6h 05m |
-
-*Sample data from the seeded demo.*
-
-### ⏱️ SLA Intelligence
-
-| Priority | First response | Resolution |
-|:---:|:---:|:---:|
-| 🔴 Critical | 15 minutes | 2 hours |
-| 🟠 High | 1 hour | 8 hours |
-| 🟡 Medium | 4 hours | 24 hours |
-| 🟢 Low | 24 hours | 72 hours |
-
-Warnings and breaches are pushed live through `sla.warning` and `sla.breached`.
-
-</div>
-
-<br/>
-
----
-
-<div align="center">
-
-## 🔄 Issue Status Workflow
-
-</div>
-
-```mermaid
-stateDiagram-v2
-    [*] --> NEW
-    NEW --> TRIAGED
-    TRIAGED --> ASSIGNED
-    ASSIGNED --> IN_PROGRESS
-    IN_PROGRESS --> WAITING
-    WAITING --> IN_PROGRESS
-    IN_PROGRESS --> RESOLVED
-    RESOLVED --> CLOSED: student confirms
-    RESOLVED --> REOPENED: student disagrees
-    REOPENED --> ASSIGNED
-    TRIAGED --> REJECTED
-    CLOSED --> [*]
-    REJECTED --> [*]
-```
-
-<br/>
-
----
-
-<div align="center">
 
 ## 🧰 Tech Stack
 
-<img src="https://skillicons.dev/icons?i=react,vite,tailwind,js,nodejs,express,mongodb,docker,vercel,git&theme=dark" alt="Tech stack icons"/>
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,vercel,github,git&theme=dark" alt="Tech stack icons"/>
 
 </div>
 
-<br/>
+| Layer | Technology |
+|---|---|
+| **Frontend** | HTML, CSS, JavaScript (update to match your framework) |
+| **Speech input** | Browser Web Speech API / ASR service for `kn-IN` |
+| **AI engine** | Large Language Model API |
+| **Speech output** | Text-to-Speech for Kannada |
+| **Hosting** | Vercel |
+| **Version control** | Git and GitHub |
 
-| | Technologies |
-|:---|:---|
-| **Frontend** | React 18, Vite, Tailwind CSS, React Router, Axios, Lucide React, Framer Motion, Recharts, React Leaflet, Socket.IO Client, React Hook Form, Zod, Sonner |
-| **Backend** | Node.js, Express.js, MongoDB, Mongoose, JWT, bcryptjs, Socket.IO, Multer, Helmet, CORS, express-rate-limit, Morgan, Winston, dotenv |
-| **AI** | OpenAI API (optional) with a deterministic local fallback, TF-IDF cosine similarity |
-| **Storage** | Cloudinary, or local uploads |
-| **DevOps** | Docker Compose, Vercel |
-
-<br/>
+> ✏️ **Note:** edit this table so it matches the exact libraries and APIs used in your code.
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```text
-CampusPulse/
-├── frontend/
-│   └── src/
-│       ├── components/   # ui, common, issues, admin
-│       ├── pages/        # auth, issues, admin
-│       ├── layouts/  hooks/  context/  routes/  charts/
-│       ├── services/     # API + socket clients
-│       └── App.jsx
-├── backend/
-│   └── src/
-│       ├── config/  controllers/  middleware/  models/  routes/
-│       ├── services/
-│       │   ├── ai/         # OpenAI + local fallback
-│       │   ├── priority/   # explainable scoring
-│       │   ├── duplicate/  # TF-IDF + clustering
-│       │   ├── analytics/
-│       │   └── sla/
-│       ├── sockets/  validators/  seeds/  utils/
-│       └── app.js
-├── docs/                   # architecture, api, database, deployment
-├── docker-compose.yml
-└── README.md
+VoiceKannada-AI/
+├── docs/
+│   └── screenshots/        # README images and demo GIF
+├── public/                 # Static assets
+├── src/                    # Application source code
+├── .env.example            # Sample environment variables
+├── package.json            # Dependencies and scripts
+├── README.md               # You are here
+└── LICENSE
 ```
 
-<br/>
+> ✏️ Adjust the tree to reflect your real folder layout.
 
 ---
 
-## 🚀 Quick Start
+## ⚙️ Installation
 
 ### Prerequisites
 
-- Node.js 18 or newer
-- MongoDB (local, or a free [Atlas](https://www.mongodb.com/atlas) cluster)
+- [Node.js](https://nodejs.org/) v18 or newer
+- npm or yarn
+- A modern browser (Chrome or Edge recommended for voice features)
+- A microphone
 
-### 1. Clone
+### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/sathi2305/Campus-Pluse-AI.git
-cd Campus-Pluse-AI
+git clone https://github.com/sathi2305/VoiceKannada-AI.git
+cd VoiceKannada-AI
 ```
 
-### 2. Backend
+### 2️⃣ Install dependencies
 
 ```bash
-cd backend
-cp .env.example .env      # then edit the values below
 npm install
-npm run seed              # demo accounts + 100+ realistic issues
-npm run dev               # http://localhost:5000
 ```
 
-### 3. Frontend
+### 3️⃣ Set up environment variables
 
 ```bash
-cd ../frontend
 cp .env.example .env
-npm install
-npm run dev               # http://localhost:5173
 ```
 
-### Or run everything with Docker
+Then open `.env` and add your keys (see the [next section](#-environment-variables)).
+
+### 4️⃣ Run locally
 
 ```bash
-docker-compose up --build
+npm run dev
 ```
 
-<br/>
+Open **http://localhost:3000** (or the port shown in your terminal).
 
-### 🔐 Environment Variables
+### 5️⃣ Build for production
 
-<details>
-<summary><b>Backend <code>.env</code></b></summary>
+```bash
+npm run build
+npm start
+```
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env` file in the project root:
 
 ```env
-PORT=5000
-NODE_ENV=development
-MONGO_URI=mongodb://localhost:27017/campuspulse
-JWT_SECRET=your_super_secret
-JWT_EXPIRES_IN=7d
-CLIENT_URL=http://localhost:5173
+# AI model API key
+API_KEY=your_api_key_here
 
-# Optional: the app works fully without these
-OPENAI_API_KEY=
-AI_MODEL=gpt-4o-mini
-CLOUDINARY_CLOUD_NAME=
-CLOUDINARY_API_KEY=
-CLOUDINARY_API_SECRET=
+# Optional: model name or endpoint
+MODEL_NAME=your_model_name
+
+# Optional: default language for speech
+SPEECH_LANG=kn-IN
 ```
 
-</details>
+> ⚠️ **Never commit your `.env` file.** Make sure `.env` is listed in `.gitignore`.
 
-<details>
-<summary><b>Frontend <code>.env</code></b></summary>
+---
 
-```env
-VITE_API_URL=http://localhost:5000/api
-VITE_SOCKET_URL=http://localhost:5000
+## 🎮 Usage
+
+1. 🌐 Open **[voice-kannada.vercel.app](https://voice-kannada.vercel.app/)**.
+2. 🎤 Tap the **microphone** button and **allow microphone access**.
+3. 🗣️ Speak your question in **Kannada**, for example:
+   - *"ಇಂದಿನ ಹವಾಮಾನ ಹೇಗಿದೆ?"* (How is the weather today?)
+   - *"ಕರ್ನಾಟಕದ ರಾಜಧಾನಿ ಯಾವುದು?"* (What is the capital of Karnataka?)
+   - *"ನನಗೆ ಒಂದು ಕಥೆ ಹೇಳು"* (Tell me a story)
+4. ⏳ Wait a moment while the AI processes your request.
+5. 🔊 Read the answer on screen and **listen to it spoken** in Kannada.
+
+### 💡 Tips for best results
+
+- Speak clearly and at a normal pace.
+- Use a quiet environment or a headset mic.
+- Use **Chrome** or **Edge** for the best speech recognition support.
+
+---
+
+## 🚀 Deployment
+
+This project is deployed on **Vercel**:
+
+🔗 **Production URL:** https://voice-kannada.vercel.app/
+
+### Deploy your own copy in one click
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/sathi2305/VoiceKannada-AI)
+
+### Manual deployment steps
+
+1. Push your code to GitHub.
+2. Go to [vercel.com](https://vercel.com) and click **Add New → Project**.
+3. Import the **VoiceKannada-AI** repository.
+4. Add your **environment variables** under *Settings → Environment Variables*.
+5. Click **Deploy**.
+
+Every push to the `main` branch triggers an automatic redeploy. 🎉
+
+### Using the Vercel CLI
+
+```bash
+npm install -g vercel
+vercel login
+vercel          # preview deployment
+vercel --prod   # production deployment
 ```
 
-</details>
+---
 
-<details>
-<summary><b>AI modes</b></summary>
+## 🗺️ Roadmap
 
-| Mode | When | What you get |
-|:---|:---|:---|
-| **Local Intelligence** | No `OPENAI_API_KEY` | Deterministic keyword mapping (water, pipeline, tap to Water; wifi, internet, router to Internet) |
-| **Enhanced Intelligence** | `OPENAI_API_KEY` set | Richer classification, sentiment, and summaries |
+- [x] Kannada speech input
+- [x] AI-generated responses
+- [x] Kannada voice output
+- [x] Vercel deployment
+- [ ] Conversation history and memory
+- [ ] Support for more Indian languages (Hindi, Tamil, Telugu)
+- [ ] Offline mode
+- [ ] Voice selection (male / female)
+- [ ] Dark mode
+- [ ] Progressive Web App (installable on phones)
+- [ ] Accessibility improvements for visually impaired users
 
-The UI always shows which mode is active. Keys are never hard-coded.
-
-</details>
-
-<details>
-<summary><b>Cloudinary (optional)</b></summary>
-
-Add your cloud name, key, and secret to the backend `.env`. If they are missing, evidence uploads are stored locally in `/uploads`, which is fine for demos.
-
-</details>
-
-<br/>
-
-### 🔑 Demo Credentials
-
-| Role | Email | Password |
-|:---|:---|:---|
-| Student | `student@campuspulse.demo` | `Student@123` |
-| Campus Admin | `admin@campuspulse.demo` | `Admin@123` |
-| Department Admin | `department@campuspulse.demo` | `Department@123` |
-
-The seed script creates 3 campuses, 10 departments, 50 users, and 100+ issues, including duplicates, recurring problems, critical cases, SLA breaches, comments, votes, and notifications.
-
-<br/>
+Have an idea? [Open an issue](https://github.com/sathi2305/VoiceKannada-AI/issues) 💡
 
 ---
 
-<div align="center">
+## 🛠️ Troubleshooting
 
-## 📡 Realtime Events
-
-</div>
-
-| Event | Fired when |
-|:---|:---|
-| `issue.created` | A new issue is reported |
-| `issue.updated` | Issue details change |
-| `issue.assigned` | A department or staff member is assigned |
-| `issue.statusChanged` | Status moves along the workflow |
-| `issue.commentAdded` | Someone comments |
-| `issue.resolved` | A resolution is submitted |
-| `notification.created` | A user notification is generated |
-| `sla.warning` | An SLA deadline is close |
-| `sla.breached` | An SLA deadline is missed |
-
-Full REST reference: [`docs/api.md`](docs/api.md)
-
-<br/>
-
----
-
-<div align="center">
-
-## 🛡️ Security
-
-</div>
-
-| | |
-|:---|:---|
-| 🔐 **Auth** | JWT with bcrypt-hashed passwords |
-| 👥 **Access** | Role-based access control and tenant isolation on every document |
-| 🧱 **Hardening** | Helmet, CORS, rate limiting, secure headers |
-| 🧼 **Input** | Zod validation, mongoSanitize, xss-clean |
-| 📎 **Uploads** | MIME type and size validation |
-| 🧯 **Errors** | Centralized handling, no secrets in code |
-
-<br/>
-
----
-
-<div align="center">
-
-## ☁️ Deployment
-
-| Part | Where |
-|:---|:---|
-| **Frontend** | [Vercel](https://campus-pluse-ai-phi.vercel.app/) |
-| **Backend API** | [Vercel](https://campus-pluse-ai-backend.vercel.app) |
-| **Database** | MongoDB Atlas |
-| **AI / Media** | OpenAI and Cloudinary (both optional) |
-
-Step-by-step guide: [`docs/deployment.md`](docs/deployment.md)
-
-</div>
-
-<br/>
-
----
-
-## 🗓️ Roadmap
-
-- [x] AI classification, severity, and sentiment
-- [x] Duplicate detection and clustering
-- [x] Explainable priority and SLA engine
-- [x] Realtime notifications
-- [x] Campus heatmap and analytics
-- [ ] Mobile app (React Native)
-- [ ] Push notifications (FCM)
-- [ ] Embedding model for duplicate detection (sentence-transformers)
-- [ ] Auto-routing based on staff availability
-- [ ] Voice reporting
-- [ ] Multilingual support
-- [ ] ERP integration
-
-<br/>
+| Issue | Solution |
+|---|---|
+| Mic not working | Allow microphone permission in the browser's site settings |
+| No voice output | Check the device volume and that a Kannada voice is installed |
+| Speech not recognised | Use Chrome or Edge, and speak clearly in a quiet place |
+| App not loading | Hard refresh with `Ctrl + Shift + R` |
+| API errors | Verify your `.env` keys and your API quota |
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome.
+Contributions make open source great! Here is how to help:
 
-1. Fork the repository
-2. Create a branch: `git checkout -b feature/your-feature`
-3. Commit your changes: `git commit -m "Add your feature"`
-4. Push the branch: `git push origin feature/your-feature`
-5. Open a pull request
+1. 🍴 **Fork** the repository
+2. 🌿 **Create** a feature branch
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+3. 💾 **Commit** your changes
+   ```bash
+   git commit -m "Add amazing feature"
+   ```
+4. 📤 **Push** to your branch
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+5. 🔁 **Open a Pull Request**
 
-<br/>
+### Contribution ideas
+
+- Improve Kannada recognition accuracy
+- Add new languages
+- Improve UI and accessibility
+- Write tests and documentation
 
 ---
 
-## 📄 License
+## 📜 License
 
-Released under the **MIT License**. Built for college projects, hackathons, startup MVPs, portfolios, and university deployments.
+Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for details.
 
-<br/>
+---
+
+## 📬 Contact
+
+**Sathi** · GitHub: [@sathi2305](https://github.com/sathi2305)
+
+🔗 **Project Link:** [https://github.com/sathi2305/VoiceKannada-AI](https://github.com/sathi2305/VoiceKannada-AI)
+🌐 **Live App:** [https://voice-kannada.vercel.app/](https://voice-kannada.vercel.app/)
+
+---
 
 <div align="center">
 
-### Built by [Sathiyamoorthi S](https://github.com/sathi2305)
+### ⭐ If you like this project, please give it a star! ⭐
 
-If CampusPulse helped you, consider giving it a ⭐
+**Made with ❤️ for the Kannada community — ಕನ್ನಡಕ್ಕಾಗಿ ❤️**
 
-[![Live Demo](https://img.shields.io/badge/Try_it_live-22d3ee?style=for-the-badge&logo=vercel&logoColor=0b1224&labelColor=0b1224)](https://campus-pluse-ai-phi.vercel.app/)
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:22d3ee,50:818cf8,100:e879f9&height=120&section=footer" width="100%" alt="footer wave"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:F09819,100:FF512F&height=120&section=footer" alt="footer" width="100%"/>
 
 </div>
